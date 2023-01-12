@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<met charset="utf-8"></met>
+<title>Contact </title>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="assets/js/hover.js"></script>
+<script src="assets/js/dataValidation.js"></script>
+</head>
+	<body>
+	<div class="row">
+	<div class="panel panel-default" id="1" onmouseover="panelOn(this.id)" onmouseout="panelOff(this.id)">
+	<div class="panel-heading">
+	<div class="text-center">Main Banner Section</div>
+	</div></div></div>
+	<ul class="nav nav-pills">
+		<li role="presentation"><a href="../hw13 - Copy/home.html">Home</a></li>
+		<li role="presentation"><a href="../hw13 - Copy/school.html">School</a></li>
+		<li role="presentation"><a href="../hw13 - Copy/work.html">Work</a></li>
+		<li role="presentation" class="active"><a href="../hw13 - Copy/contact.html">Contact</a></li>
+	</ul>
+		
+	<div id="container">
+	<div class="panel panel-primary">
+	<div class="panel-heading">Contact Form</div>
+	<div class="panel body">
+	<form method="post" action="">
+	<div class="form-group">
+	<label> First Name:</label>
+	<input class="form-control" name="fname" type="text" id="fname" onBlur="checkFName(this.value)">
+	<?php
+		if (isset($_GET['err']) && strstr)($_GET['err'], "LnameNull"))
+		echo '<'
+
+	<p class="help-block" id="fnameHelp"></p>	
+	</div>
+			
+	<div class="form-group">
+	<label> Last Name:</label>
+	<input class="form-control" name="lname" type="text" id="lname" onBlur="checkLName(this.value)">
+	<p class="help-block" id="lnameHelp"></p>		
+	</div>
+			
+	<div class="form-group">
+	<label>Prefered Method of Contact:</label><br>
+	<input type="radio" id="methodPhone" name="prefMethod" value="phone">
+ 	<label for="phone">Phone</label><br>
+ 	<input type="radio" id="methodEmail" name="prefMethod" value="email">
+	<label for="email">Email</label>
+	<br>
+	</div>
+			
+	<div class="form-group">
+	<label> Email:</label>
+	<input class="form-control" name="email" type="text" id="email" onBlur="contactMethod(this.value)">
+	<p class="help-block" id="emailHelp"></p>		
+	</div>
+			
+	<div class="form-group">
+	<label> Phone Number:</label>
+	<input class="form-control" name="phone" type="text" id="phone" onBlur="contactMethod(this.value)">
+	<p class="help-block" id="phoneHelp"></p>	
+	</div>
+				
+	<div class="form-group">
+	<label> BirthDate:</label>
+	<input class="form-control" name="birthdate" type="text" id="DOB" onBlur="checkDOB(this.value)">
+	<p class="help-block" id="DOBHelp"></p>			
+	</div>
+	<div class="form-group">
+	<label> Comment:</label>
+	<!--<textarea name="comment" rows="10" cols="50" id="comment" onBlur="checkComm(this.value)"></textarea> -->
+	<input class="form-control" name="comment" type="text" id="comment" onBlur="checkComm(this.value)">
+	<p class="hel-block" id="commentHelp"></p>		</div>
+	<hr>
+	<button id="submit" type="submit" class="btn btn-block btn-success">Submit</button>
+	</form>
+	</div>
+	</div>	
+		
+	<div class="row">
+	<div class="panel panel-default" id="2" onmouseover="panelOn(this.id)" onmouseout="panelOff(this.id)">
+	<div class="panel-heading">Email Link</div>
+	<div class="col-sm-3">
+	<button type="button" class="btn-default.focus"> <a href="mailto:mariavanesa@uni.edu">Email</a></button>
+	</div>
+		
+	<div class="panel panel-default" id="3" onmouseover="panelOn(this.id)" onmouseout="panelOff(this.id)">
+
+	<div class="panel-body">
+		<img src="/images/profile.jpg" alt="Profile" title="Maria Vanesa" height="auto" width="200" align="left"> 
+		</div></div></div></div>
+	
+		<div class="row">
+		<div class="panel panel-default" id="4" onmouseover="panelOn(this.id)" onmouseout="panelOff(this.id)">
+		<div class="panel-heading">LinkedIn Information </div>
+		<div class="col-sm-3">
+		<button type="button" class="btn-default.focus"><a href="https://www.linkedin.com/school/the-university-of-texas-at-san-antonio/mycompany/">LinkedIn</a></button>
+		</div>
+		</div></div>
+			
+		<div class="panel panel-default" id="5" onmouseover="panelOn(this.id)" onmouseout="panelOff(this.id)">
+		<div class="panel-heading">Languages</div>
+		<div class="panel-body">
+			 Languages: Fluent Spanish, Fluent English, Intermediate Italian
+		</div></div>
+		
+		<div class="panel-footer">
+		<div class="text-center">Assignment 9 Bootstrap</div></div>
+	</div>	
+	</body>
+</html>
+
+
+<?php
+echo "<p>Hello World!</p>";
+$firstName=$_POST['fname'];
+$lastName=$_POST['lname'];
+$email=$_POST['email'];
+$phone=$_POST['phone'];
+$comment=$_POST['comment'];
+?>
+

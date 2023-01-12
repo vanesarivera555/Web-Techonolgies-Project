@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculator Example</title>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/basic.css">
+<script src="assets/js/calculator.js"></script>
+</head>
+<body>
+<div id="page-inner">
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+    <label>First Number:</label>
+    <input class="form-control" type="text" id="num1" placeholder="Integer 1">
+    <p class="help-block" id="num1Help"></p>
+</div>
+<div class="form-group">
+    <label>Second Number:</label>
+    <input class="form-control" type="text" id="num2" placeholder="Integer 2">
+    <p class="help-block" id="num2Help"></p>
+</div>
+<div class="form-group">
+	<label>Function:</label>
+	<select id="funct" name="funct">
+	<option value= "add"> Add</option>
+	<option value= "sub"> Subtract</option>
+	<option value= "multiply"> Multiply</option>
+	<option value= "divide"> Divide</option>
+	</select>
+	</div>
+<button id="submit" class="btn btn-block btn-success" type="submit" onclick="calc();">Calculate</button>
+<div id="answer"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

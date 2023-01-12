@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+.navButton{
+	background-color:#FFB6C1;
+	text-align:center;
+	text-color:#FFFFFF;
+	border-radius:25px;
+	padding:10px;
+	margin:10px;
+}
+.navBar{
+		padding:25px;
+	}
+a:link, a:visited{
+color:white;
+text-align:center;
+text-decoration:none;
+display: inline-block;
+}
+.footer{
+	background-color:thistle;
+	text-align:center;
+	padding: 10px;
+}
+.mainBan{
+	background-color:#E1E1E1;
+	text-align:center;
+	padding: 10px;	
+}
+.contactLk a{
+	color:lightseagreen;
+	align:center;
+}
